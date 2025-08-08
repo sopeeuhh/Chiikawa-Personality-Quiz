@@ -13,30 +13,32 @@ button:hover {
 /* STYLE BODY */
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+  margin: 4em;
 }
 
 /* STYLE TEXT */
 h1 {
   font-style: italic;
-  color: #0d9c90;
+  color: #0d83a0;
 }
 
 h2 {
   margin-top: 2em; 
+  color: #c9a5ee;
+  font-size: 2.4em;
 }
 
 /* STYLE FLEX CONTAINER */
 .question {
   display: flex;
-  /* uncomment the next line to center the questions and answers */
-  /* justify-content: center; */
+  justify-content: cener;
   margin-top: 2em;
 }
   
 /* STYLE FLEX ITEM */
 .answer-choice {
   margin: 5px;
+  text-align: center;
 }
 
 /* STYLE IMAGES */
@@ -44,6 +46,7 @@ h2 {
   height: 10em;
   border: 5px solid #c9a5ee;
   border-radius: 10px;
+  align-items: center;
 }
 
 /* STYLE BUTTON */
@@ -51,7 +54,7 @@ button {
   margin-top: 5px;
   color: #ffffff;
   background-color: #c9a5ee;
-  border: 2px solid #c9a5ee;
+  border: 3px solid #c9a5ee;
   padding: 8px 16px;
   border-radius: 5px;
   cursor: pointer;
