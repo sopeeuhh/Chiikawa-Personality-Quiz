@@ -17,6 +17,7 @@ var q3a1 = document.getElementById("q3a1");
 var q3a2 = document.getElementById("q3a2");
 var q3a3 = document.getElementById("q3a3");
 
+// ADD EVENT LISTENER TO EACH BUTTON
 q1a1.addEventListener("click", function() {
   hachiware();
   disableQuestionButtons(q1a1);
@@ -29,7 +30,6 @@ q1a3.addEventListener("click", function() {
   chiikawa();
   disableQuestionButtons(q1a3);
 });
-
 
 q2a1.addEventListener("click", function() {
   usagi();
@@ -48,7 +48,7 @@ q3a1.addEventListener("click", function() {
   chiikawa();
   disableQuestionButtons(q3a1);
 });
-q3q2.addEventListener("click", function() {
+q3a2.addEventListener("click", function() {
   usagi();
   disableQuestionButtons(q3a2);
 });
@@ -94,25 +94,28 @@ function usagi() {
 }
 
 function disableQuestionButtons(clickedButton) {
+  
+// DETERMINE WHICH QUESTION THE BUTTON BELONGS TO
   var buttonId = clickedButton.id;
   var questionNumber = buttonId.charAt(1);
 
+//GET ALL BUTTONS FOR THIS QUESTION  
   var q1Buttons = [q1a1, q1a2, q1a3];
   var q2Buttons = [q2a1, q2a2, q2a3];
   var q3Buttons = [q3a1, q3a2, q3a3];
 
   var buttonsToDisable = [];
-  if (questionNumber == "1") {
+  if (questionNumber === '1') {
     buttonsToDisable = q1Buttons;
-  } else if (questionNumber == "2") {
+  } else if (questionNumber === '2') {
     buttonsToDisable = q2Buttons;
-  } else if (questionNumber == "3") {
+  } else if (questionNumber === '3') {
     buttonsToDisable = q3Buttons;
   }
 
   // DISABLES BUTTONS EXCEPT THE ONE THAT WAS CLICKED
   buttonsToDisable.forEach(function(button) {
-    if (button != clickedButton) {
+    if (button !== clickedButton) {
       button.disabled = true;
     }
   });
