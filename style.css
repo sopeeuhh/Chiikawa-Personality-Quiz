@@ -45,6 +45,11 @@ button:hover {
 
 
 /* STYLE BODY */
+ p {
+   font-size: 1.2em;
+ }
+  
+
 body {
   text-align: center;
   font-family: "Jua", "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif; 

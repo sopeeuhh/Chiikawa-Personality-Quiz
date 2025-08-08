@@ -17,6 +17,14 @@ var q3a1 = document.getElementById("q3a1");
 var q3a2 = document.getElementById("q3a2");
 var q3a3 = document.getElementById("q3a3");
 
+var q4a1 = document.getElementById("q4a1");
+var q4a2 = document.getElementById("q4a2");
+var q4a3 = document.getElementById("q4a3");
+
+var q5a1 = document.getElementById("q5a1");
+var q5a2 = document.getElementById("q5a2");
+var q5a3 = document.getElementById("q5a3");
+
 // ADD EVENT LISTENER TO EACH BUTTON
 q1a1.addEventListener("click", function() {
   hachiware();
@@ -57,13 +65,40 @@ q3a3.addEventListener("click", function() {
   disableQuestionButtons(q3a3);
 });
 
+q4a1.addEventListener("click", function() {
+  usagi();
+  disableQuestionButtons(q4a1);
+});
+q4a2.addEventListener("click", function() {
+  chiikawa();
+  disableQuestionButtons(q4a2);
+});
+q4a3.addEventListener("click", function() {
+  hachiware();
+  disableQuestionButtons(q4a3);
+});
+
+q5a1.addEventListener("click", function() {
+  chiikawa();
+  disableQuestionButtons(q5a1);
+});
+q5a2.addEventListener("click", function() {
+  usagi();
+  disableQuestionButtons(q3a2);
+});
+q5a3.addEventListener("click", function() {
+  hachiware();
+  disableQuestionButtons(q5a3);
+});
+
+
 function chiikawa() {
   chiikawaScore += 1;
   questionCount += 1;
 
   console.log("questionCount = " + questionCount + "chiikawaScore = " + chiikawaScore);
 
-  if (questionCount == 3) {
+  if (questionCount == 5) {
     console.log("The quiz is done!");
     updateResult();
   }
@@ -75,7 +110,7 @@ questionCount += 1;
 
 console.log("questionCount = " + questionCount + "hachiwareScore = " + hachiwareScore);
 
-if(questionCount == 3) {
+if(questionCount == 5) {
   console.log("The quiz is done!");
   updateResult();
 }
@@ -87,7 +122,7 @@ function usagi() {
 
   console.log("questionCount = " + questionCount + "usagiScore = " + usagiScore);
 
-  if (questionCount == 3) {
+  if (questionCount == 5) {
     console.log("The quiz is done!");
     updateResult();
   }
@@ -103,6 +138,8 @@ function disableQuestionButtons(clickedButton) {
   var q1Buttons = [q1a1, q1a2, q1a3];
   var q2Buttons = [q2a1, q2a2, q2a3];
   var q3Buttons = [q3a1, q3a2, q3a3];
+  var q4Buttons = [q4a1, q4a2, q4a3];
+  var q5Buttons = [q5a1, q5a2, q5a3];
 
   var buttonsToDisable = [];
   if (questionNumber === '1') {
@@ -111,6 +148,10 @@ function disableQuestionButtons(clickedButton) {
     buttonsToDisable = q2Buttons;
   } else if (questionNumber === '3') {
     buttonsToDisable = q3Buttons;
+  } else if (questionNumber === '4') {
+      buttonsToDisable = q4Buttons;
+  } else if (questionNumber === '5') {
+      buttonsToDisable = q5Buttons;
   }
 
   // DISABLES BUTTONS EXCEPT THE ONE THAT WAS CLICKED
@@ -142,7 +183,7 @@ function updateResult() {
 
 
   // DISABLES BUTTONS WHEN OPTION IS CHOSEN
-  var buttons = [q1a1, q1a2, q1a3, q2a1, q2a2, q2a3, q3a1, q3a2, q3a3];
+  var buttons = [q1a1, q1a2, q1a3, q2a1, q2a2, q2a3, q3a1, q3a2, q3a3, q4a1, q4a2, q4a3, q5a1, q5a2, q5a3];
   buttons.forEach(function(button) {
     button.disabled = true;
   });
@@ -162,7 +203,7 @@ function resetQuiz() {
 
 
   //RE-ENABLE BUTTONS
-  var buttons= [q1a1, q1a2, q1a3, q2a1, q2a2, q2a3, q3a1, q3a2, q3a3];
+  var buttons= [q1a1, q1a2, q1a3, q2a1, q2a2, q2a3, q3a1, q3a2, q3a3, q4a1, q4a2, q4a3, q5a1, q5a2, q5a3];
   buttons.forEach(function(button) {
     button.disabled = false;
   });
