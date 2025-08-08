@@ -1,4 +1,38 @@
 /* STYLE SECTIONING TAGS */
+/* NAV BAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #c9a5ee;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
 
 /*CURSOR DESIGN*/
 * {
@@ -13,7 +47,7 @@ button:hover {
 /* STYLE BODY */
 body {
   text-align: center;
-  font-style: 'Sen', 'Arial', sans-serif; 
+  font-family: "Jua", "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif; 
   margin: 4em;
   margin-left: 10em;
   margin-right: 10em;
@@ -37,17 +71,38 @@ body::before {
 
 /* STYLE TEXT */
 h1 {
-  font-style: 'Sen', 'Arial', sans-serif;
+  font-family: "Jua", "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   color: #0d83a0;
+  text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
+  font-size: 4em;
+  padding-top: 1.5em;
+  padding-bottom: 0.2em;
 }
 
 h2 {
-  margin-top: 2em; 
   color: #c9a5ee;
   font-size: 2.4em;
   line-height: 1em;
+  text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
+  padding-top: 1em;
 }
 
+.letter-pink {
+  color: #ffb3d9;
+  font-weight: bold;text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
+}
+
+.letter-blue {
+  color: #89c1f5;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
+}
+
+.letter-yellow {
+  color: #ffeb66;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px white, -2px -2px 0px white, 2px -2px 0px white, -2px 2px 0px white;
+}
 /* STYLE FLEX CONTAINER */
 .question {
   display: flex;
@@ -91,3 +146,5 @@ button:disabled {
   border-color: #cccccc;
   cursor: not-allowed;
 }
+
+
