@@ -1,4 +1,16 @@
 /* STYLE SECTIONING TAGS */
+
+/*CURSOR DESIGN*/
+* {
+  cursor: url("weapon.png") 16 16, auto;
+}
+
+button:hover {
+  cursor: url("monster.png") 16 16, auto;
+}
+
+
+/* STYLE BODY */
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
@@ -30,9 +42,29 @@ h2 {
 /* STYLE IMAGES */
 .answer-choice img {
   height: 10em;
+  border: 5px solid #c9a5ee;
+  border-radius: 10px;
 }
 
 /* STYLE BUTTON */
 button { 
   margin-top: 5px;
+  color: #ffffff;
+  background-color: #c9a5ee;
+  border: 2px solid #c9a5ee;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #f0e1fe;
+  color: white;
+}
+button:disabled {
+  background-color: #cccccc;
+  color: #666666;
+  border-color: #cccccc;
+  cursor: not-allowed;
 }
