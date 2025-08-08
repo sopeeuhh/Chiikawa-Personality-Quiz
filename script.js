@@ -75,7 +75,7 @@ questionCount += 1;
 
 console.log("questionCount = " + questionCount + "hachiwareScore = " + hachiwareScore);
 
-if(questionCount==3) {
+if(questionCount == 3) {
   console.log("The quiz is done!");
   updateResult();
 }
@@ -104,11 +104,9 @@ function disableQuestionButtons(clickedButton) {
   var buttonsToDisable = [];
   if (questionNumber == "1") {
     buttonsToDisable = q1Buttons;
-  } 
-  else if (questionNumber == "2") {
+  } else if (questionNumber == "2") {
     buttonsToDisable = q2Buttons;
-  } 
-  else if (questionNumber == "3") {
+  } else if (questionNumber == "3") {
     buttonsToDisable = q3Buttons;
   }
 
