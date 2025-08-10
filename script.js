@@ -164,19 +164,26 @@ function disableQuestionButtons(clickedButton) {
 
 function updateResult() {
   var result = document.getElementById("result");
+  var videoHTML = "";
 
   if(chiikawaScore >= hachiwareScore && chiikawaScore >= usagiScore) {
     result.innerHTML = "You are Chiikawa! ✧˖°";
     console.log ("You are Chiikawa! ✧˖°");
+    videoHTML = '<div style="display:flex; justify-content:center; margin-top: 30px"><iframe id="characterVideo" width="560" height="315" src="https://www.youtube.com/embed/JzZDGYi7cUk" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
+    
   }
   else if(hachiwareScore >= chiikawaScore && hachiwareScore >= usagiScore) {
     result.innerHTML = "You are Hachiware! ♬⋆.˚";
     console.log ("You are Hachiware! ♬⋆.˚");
+    videoHTML = '<div style="display:flex; justify-content:center; margin-top: 30px"><iframe id="characterVideo" width="560" height="315" src="https://www.youtube.com/embed/mnO0uTHjQCQ" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
   }
   else {
     result.innerHTML = "You are Usagi! ₍ᐢ. .ᐢ₎";
     console.log ("You are Usagi! ₍ᐢ. .ᐢ₎");
+    videoHTML = '<div style="display:flex; justify-content:center; margin-top: 30px"><iframe id="characterVideo" width="560" height="315" src="https://www.youtube.com/embed/yK4OrGWmyZk" title="Youtube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>';
   }
+
+  result.innerHTML+=videoHTML;
 
   // SHOW RESET BUTTON
   resetButton.style.display = "inline-block";
