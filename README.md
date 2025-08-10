@@ -1,53 +1,6 @@
-# Personality Quiz Starter Code
+1. My project is a personality quiz. It is called "Chiikawa Personality Quiz." It gives you a set of questions that you have to answer by clicking on the options. Based on your answers, you'll get a character from Chiikawa that will best represent you.
+2. I made my project mainly because of Girls Who Code, but it's also a really fun game to share with friends. I shared this test to some of my friends and I learned a little more about who they are.
+3. I made my project using CSS, HTML and JavaScript. I followed the videos that GWC gave us. I first designed the background of the website and the buttons in CSS and by adding images to the asset folder. I also added my headers for the questions and the title and changed the design for them to. I kept the website a lavender theme. I then linked the buttons so when you clicked on the answer buttons, it'll give you a resulting character by creating var for each charater and then adding event listeners, elementIDs, and a function where you disable the other buttons when you click on one of the options. I also added a youtube link where it shows you insight to the chracter that you get. I also added a nav bar in CSS and the index.html so I could explain to the user more about the character's personality.
+4. I struggled most with the JavaScript. It was most difficult as I kept on missing various bugs and I was confused on how to link the 5th and 6th questions. I learned how to link videos to Youtube, how each button is connected to the questionButton, how to create custom cursors, how disabling buttons worked, and how to get an output in the console.
 
-This is a place for you to start building your personality quiz!
-
-### Project Requirements
-Your project should:
-- Have at least three questions.
-- Have at least two answers to each question that correspond to the quiz outcomes.
-- Allow a person to select an answer by clicking a button.
-- Display different outcomes for different combinations of answer selections.
-
-
-### Extensions
-You can extend your project further by:
-- Adding more questions to your quiz.
-- Customizing the look and feel with CSS.
-- Allow a person to restart the quiz by clicking a button.
-- Creating a button to update result instead of having it display unprompted.
-- Disabling buttons after a person selects an answer.
-
-
-### Image Attributions
-*Tell us where you found the image you are using! Make sure it is in the public domain, has a license that allows you to use it, or is one you took on your own. Check out [archive.org](https://archive.org/), [Pixabay](https://pixabay.com/), [Unsplash](https://unsplash.com/), or [Burst](https://burst.shopify.com/) for free, uncopyrighted images.*
-- [Espresso](https://pixabay.com/photos/coffee-espresso-short-cup-mug-731330/)
-- [Matcha latte](https://pixabay.com/photos/matcha-green-tea-latt%C3%A9-heart-2683990/)
-- [Chocolate Croissant](https://pixabay.com/photos/chocolate-croissant-bakery-hunger-4840779/)
-- [Egg Sammy](https://pixabay.com/photos/bacon-egg-and-cheese-2834906/)
-- [Bed](https://pixabay.com/photos/bed-pillows-headboard-bedroom-2167288/)
-- [Window](https://pixabay.com/photos/window-window-seat-cushions-2227301/)
-
----
-
-## File Overview
-
-### ← README.md
-
-That's this file. This is the place to tell people more about what your website does and how you built it. 
-
-### ← index.html
-
-HTML files are for content! Add your text, images, buttons, and more using HTML tags.
-
-### ← style.css
-
-CSS files add styling rules to your content like changing colors and fonts. 
-
-### ← script.js
-
-JavaScript files add interactivity to your website using code. This is where you can listen for events, then take an action.
-
-### ← assets
-
-Drag in assets, like images or music, to add them to your project. You do not need to add anything to this folder unless you are working on the extensions. If you are adding an image, it is best to save it to your computer, then upload the file to the `assets` folder. The url of the image will be `assets/example.jpg`.
+[![Athena Award Badge](https://img.shields.io/endpoint?url=https%3A%2F%2Faward.athena.hackclub.com%2Fapi%2Fbadge)](https://award.athena.hackclub.com?utm_source=readme)
